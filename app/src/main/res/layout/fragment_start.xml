@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".db.starter.StartFragment">
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/ic_launcher_round"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_cholo_kini"
+        android:textStyle="bold"
+        android:fontFamily="@font/allerta_stencil"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#CD7F0C"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_16sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="login"
+        android:fontFamily="@font/allerta_stencil"
+        android:textColor="@color/white"
+        android:background="@drawable/btn"
+        android:backgroundTint="#CD7F0C"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="Register"
+        android:fontFamily="@font/allerta_stencil"
+        android:textColor="#FF9800"
+        android:background="@drawable/reg_btn"/>
+
+
+</LinearLayout>
