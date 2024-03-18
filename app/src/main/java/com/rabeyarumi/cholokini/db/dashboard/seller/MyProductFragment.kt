@@ -1,4 +1,4 @@
-package com.rabeyarumi.cholokini.db.dashboard
+package com.rabeyarumi.cholokini.db.dashboard.seller
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,12 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.rabeyarumi.cholokini.R
-import com.rabeyarumi.cholokini.databinding.FragmentDashboardBinding
 
 
-class DashboardFragment : Fragment() {
 
-    private lateinit var binding: FragmentDashboardBinding
+class MyProductFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -19,12 +17,8 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-
-        binding = FragmentDashboardBinding.inflate(inflater,container,false)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_my_product, container, false)
     }
-
-
 
 
 }

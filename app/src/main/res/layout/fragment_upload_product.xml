@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UploadProductFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/pic_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/ic_picture"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:cursorColor="#FF9800"
+            android:id="@+id/outlinedTextField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/product_name"
+            android:textColorHint="#FF9800"
+            app:hintTextColor="#FF9800"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_margin="@dimen/_8sdp"
+            app:boxStrokeColor="#FF9800"
+            app:boxStrokeWidth="@dimen/_2sdp"
+            android:enabled="true"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF9800"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.SmallComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/allerta_stencil"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:cursorColor="#FF9800"
+            android:id="@+id/outlinedTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/product_description"
+            android:textColorHint="#FF9800"
+            app:hintTextColor="#FF9800"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_margin="@dimen/_8sdp"
+            app:boxStrokeColor="#FF9800"
+            app:boxStrokeWidth="@dimen/_2sdp"
+            android:enabled="true"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF9800"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.SmallComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_product_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/allerta_stencil"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:cursorColor="#FF9800"
+            android:id="@+id/outlinedTextField3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/product_amount"
+            android:textColorHint="#FF9800"
+            app:hintTextColor="#FF9800"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_margin="@dimen/_8sdp"
+            app:boxStrokeColor="#FF9800"
+            app:boxStrokeWidth="@dimen/_2sdp"
+            android:enabled="true"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF9800"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.SmallComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_product_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/allerta_stencil"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:cursorColor="#FF9800"
+            android:id="@+id/outlinedTextField4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/product_price"
+            android:textColorHint="#FF9800"
+            app:hintTextColor="#FF9800"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_margin="@dimen/_8sdp"
+            app:boxStrokeColor="#FF9800"
+            app:boxStrokeWidth="@dimen/_2sdp"
+            android:enabled="true"
+            app:endIconMode="clear_text"
+            app:endIconTint="#FF9800"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.SmallComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/allerta_stencil"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_upload_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="@string/upload_product"
+            android:fontFamily="@font/allerta_stencil"
+            android:textColor="@color/white"
+            android:background="@drawable/btn"
+            android:backgroundTint="#CD7F0C"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

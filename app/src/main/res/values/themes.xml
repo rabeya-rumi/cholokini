@@ -11,4 +11,6 @@
     </style>-->
 
     <style name="Theme.CholoKini" parent="Base.Theme.CholoKini" />
+
+    <style name="Theme.CholoKini.App.Bar" parent="Theme.Material3.DayNight"/>
 </resources>
